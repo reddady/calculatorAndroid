@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_12"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/number_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="@dimen/margin_12"
+        android:hint="@string/text_hint"
+        android:importantForAutofill="no"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/padding_all"
+        android:shadowColor="@color/black"
+        android:inputType="number"
+        android:background="@drawable/edit_text_header"
+        />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4dp">
+
+        <Button style="@style/button_style"
+             android:id="@+id/button_one"
+             android:text="1"
+             android:onClick="operationFunction"/>
+        <Button style="@style/button_style" android:text="2"
+            android:id="@+id/button_two"/>
+        <Button style="@style/button_style" android:text="3"
+            android:id="@+id/button_three"/>
+        <Button style="@style/button_style" android:text="/"    android:id="@+id/button_sl"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4dp">
+
+        <Button style="@style/button_style"  android:text="4"
+            android:id="@+id/button_four"  />
+        <Button style="@style/button_style"  android:text="5"    android:id="@+id/button_five"/>
+        <Button style="@style/button_style"  android:text="6"   android:id="@+id/button_six" />
+        <Button style="@style/button_style"  android:text="-"    android:id="@+id/button_pen"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4dp">
+
+        <Button style="@style/button_style"  android:text="7"
+            android:id="@+id/button_seven"  />
+        <Button style="@style/button_style"   android:text="8"   android:id="@+id/button_eight"/>
+        <Button style="@style/button_style"  android:text="9"    android:id="@+id/button_nine"/>
+        <Button style="@style/button_style"  android:text="+"    android:id="@+id/button_plus"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4dp">
+
+        <Button style="@style/button_style"   android:text="c"
+            android:id="@+id/button_C"
+            />
+        <Button style="@style/button_style"   android:text="0"   android:id="@+id/button_Zero"/>
+        <Button style="@style/button_style"   android:text="."   android:id="@+id/button_dot"/>
+        <Button style="@style/button_style"  android:text="="   android:id="@+id/button_Equel"/>
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

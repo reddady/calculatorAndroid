@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">calculate</string>
+    <string name="text_hint">"Enter Your Number "</string>
+</resources>
